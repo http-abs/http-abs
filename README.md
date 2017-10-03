@@ -7,7 +7,7 @@ The idea is not concerned to the IP address. Additional investigation should be 
 ## Anti-Blocking idea
 The blocking rules are often based on the particular URL containing a site domain name and sometimes path (URI) to the restricted matherial. It means that the site as a whole is not blocked by this record, and administration restricts local access to the particular matherial on the site only.
 
-Even when the domain is restricted, the particular domain is blocked.
+Even when the domain is restricted, often the particular domain, not a superdomain, is blocked.
 
 The idea is to create an individual *matherial viewer URL* for **each** particular user reading **each** particular material.
 
