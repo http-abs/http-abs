@@ -69,3 +69,28 @@ The code refers to 3 different subdomains, a, b, and c, using them in the viewer
 The code uses random 32-character hex path prefix as a part of the viewer identity. Such a prefix may lead to problems when using forms in case of unchanged backend code.
 
 We will create a configuration to have a possibility to have a choice of matherial individual URL constructing algorithm and it's parameters at the next stage.
+
+## Installation
+
+### Pre-requisites
+You should install nginx with lua-nginx-module and lua runtime. Ubuntu users can install nginx-extra package which contains necessary modules and dependencies. Start the nginx service and ensure it works.
+
+## Installing a site
+Put the provided example.com configuration file to the directory with available sites, it is `/etc/nginx/sites-available` for Ubuntu users.
+Create a link to the configuration file in the directory containing enabled sites, it is `/etc/nginx/sites-enabled` for Ubuntu users.
+Restart or reload nginx:
+```
+sudo service nginx reload
+```
+
+## Patching local DNS
+Add the following line to the /etc/hosts file:
+```
+127.0.0.1       example.com a.example.com b.example.com c.example.com
+```
+
+## Starting backend
+Start some existent web site backend on the port 8000
+
+## Bingo!
+Open `http://a.example.com` and look how the nginx converts references.
