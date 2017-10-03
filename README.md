@@ -21,7 +21,7 @@ When the matherial is requested by the particular viewer the individual matheria
 ### Individual viewer subdomain
 Every viewer has it's own subdomain to see matherials, while the path to the matherial is permanent across viewers subdomains.
 
-Such a way, the matherial having original matherial path `/a/b/c` will have the following references:
+Such a way, the matherial having original matherial path `/a/b/c` will have references like the following:
 - `gwfhg.example.com/a/b/c` - for the viewer `gwfhg`
 - `rtyrd.example.com/a/b/c` - for the viewer `rtyrd`
 - `cvbcb.example.com/a/b/c` - for the viewer `cvbcb`
@@ -30,7 +30,7 @@ Such a way, the matherial having original matherial path `/a/b/c` will have the 
 ### Individual viewer path prefix
 Every viewer has it's own path prefix, the rest of the path is individual to the matherial
 
-Such a way, the matherial having original matherial path `/a/b/c` will have the following references:
+Such a way, the matherial having original matherial path `/a/b/c` will have references like the following:
 - `example.com/gwfhg/a/b/c` - for the viewer `gwfhg`
 - `example.com/rtyrd/a/b/c` - for the viewer `rtyrd`
 - `example.com/cvbcb/a/b/c` - for the viewer `cvbcb`
@@ -40,7 +40,7 @@ Such a way, the matherial having original matherial path `/a/b/c` will have the 
 ### Combination of subdomain and path prefix
 The pair of subdomain and path prefix is determined by the viewer identity, while th superdomain and the rest of the path concerns to the matherial
 
-Such a way, the matherial having original matherial path `/a/b/c` will have the following references:
+Such a way, the matherial having original matherial path `/a/b/c` will have references like the following:
 - `gwfhg.example.com/asdf/a/b/c` - for the viewer `asdf@gwfhg`
 - `rtyrd.example.com/qwer/a/b/c` - for the viewer `qwer@rtyrd`
 - `cvbcb.example.com/zxcv/a/b/c` - for the viewer `zxcv@cvbcb`
@@ -49,7 +49,7 @@ Such a way, the matherial having original matherial path `/a/b/c` will have the 
 ### Encrypted subdomain and path
 The subdomain and path are determined by some cryptographic function having viewer identity and original path as parameters
 
-Such a way, the matherial having original matherial path `/a/b/c` will have the following references:
+Such a way, the matherial having original matherial path `/a/b/c` will have references like the following:
 - `gwfhg.example.com/asdf` - for the viewer `12345`
 - `rtyrd.example.com/qwer` - for the viewer `23456`
 - `cvbcb.example.com/zxcv` - for the viewer `34567`
