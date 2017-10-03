@@ -57,7 +57,7 @@ Such a way, the matherial having original matherial path `/a/b/c` will have refe
 
 
 ## Persistent reference
-Any viewer can send it's individual URL referencing to the matherial to any other viewer free. When the other viewer will open the received reference URL, it be redirected to it's individual matherial URL basing on the matherial path extracted from the first viewer individual URL and the second viewer individual identity.
+Any viewer can send it's individual URL referencing to the matherial to any other viewer free. When the other viewer will open the received reference URL, it will be redirected to it's individual matherial URL basing on the matherial path extracted from the first viewer individual URL and the second viewer individual identity.
 
 Let the viewer `asdf@gwfhg` has stored it's individual URL reference `gwfhg.example.com/asdf`. Then it sends the reference to the matherial to the viewer `qwer@rtyrd`. When the viewer `qwer@rtyrd` requests a page from `gwfhg.example.com/asdf` the server converts the requested URL to `rtyrd.example.com/qwer` and redirects viewer `qwer@rtyrd` to this URL.
 
